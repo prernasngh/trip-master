@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> 
+</head>
+<body>
+<header>
+    <div id="menu-bar" class="fas fa-bars">
+
+    </div>
+    <a href="#" class="logo">Trip Master</a>
+    
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search here">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<div class="login-form-container">
+    
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>User Login</h3>
+            <input type="email" class="box" placeholder="Enter your email address">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" class="btn" value="login now" >
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+        <p>Forgot Password?<a href="#">    Click Here</a></p>
+        <p>Don't have an account?<a href="#">   Register Now!</a></p>
+    </form>
+</div>
+<!-- home section -->
+<section class="home" id="home">
+    <div class="content">
+        <div class="backvid">
+            <video class="backvidcontent" autoplay muted loop>
+                <source src="pexels-mikhail-nilov-6981406.mp4" type="video/mp4">Your browser doesn't support video.
+            </video>
+        </div>
+        <h3>adventure awaits!</h3>
+        <p>so what are you waiting for? </p>
+        <p>come and Discover new places with us.</p>
+    </div>
+</section>
+<!-- book section -->
+<section class="book" id="book">
+     <h1 class="heading">Book Now!</h1><br><br>
+     <form action="" class="bform" id="bookB">
+        From:<br><input type="text" class="box1"  placeholder="name of place"><br>
+        To:<br><input type="text" class="box1" placeholder="name of place"><br>
+        Start Date:<br><input type="date" class="box1" placeholder="dd/mm/yyyy"><br>
+        End Date:<br><input type="date" class="box1" placeholder="dd/mm/yyyy"><br>
+        <input type="submit" class="btnn" value="Book" >
+     </form>
+</section>
+<!-- packages section -->
+<section class="packages" id="packages">
+    <h1>Packages:</h1><br><br>
+    <div class="container">
+        <div class="card">
+            <div class="cardimg" id="card1"></div>
+            <div class="content">
+                <h2>Maharashtra</h2>
+                <p>Maharashtra-the Land of Marathas is a masterpiece shrouded by endless stories of bravery.Come and explore the Bollywood.</p>
+                <p class="costp">$100</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardimg" id="card2"></div>
+            <div class="content">
+                <h2>Bihar</h2>
+                <p>Birthplace of Two Religions-Buddhism and Jainism, Bihar has huge spiritual significancee.It is the land of monastries.</p>
+                <p class="costp">$80</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>          
+        </div>
+        <div class="card">
+            <div class="cardimg" id="card3"></div>
+            <div class="content">
+                <h2>Chicago</h2>
+                <p>Chicago-the mistress of the lakes. It will give you a chance. The sporting spirit is the spirit of Chicago.</p>
+                <p class="costp">$90</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>           
+        </div>
+        <div class="card">
+            <div class="cardimg" id="card4"></div>
+            <div class="content">
+                <h2>Paris</h2>
+                <p>Paris, I believe, is a man in his twenties in love with an older woman.Paris is well worth a Mass.</p>
+                <p class="costp">$70</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="cardimg" id="card5"></div>
+            <div class="content">
+                <h2>Goa</h2>
+                <p>Goa welcomes you in aworld of natural splendor.The moment you enter, you fall in love for it.</p>
+                <p class="costp">$70</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>  
+        </div>
+        <div class="card">
+            <div class="cardimg" id="card6"></div>
+            <div class="content">
+                <h2>Switzerland</h2>
+                <p>The amazing natural beauty of the majestic Alps,the placid lakes,quaint villages,cosmopolitan cities and towering castles.</p>
+                <p class="costp">$170</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardimg" id="card7"></div>
+            <div class="content">
+                <h2>Hawaii</h2>
+                <p>World-class beaches, pristine rainforests, and sizzling volcanoes are just what Hawaii is famous for.</p>
+                <p class="costp">$150</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardimg" id="card8"></div>
+            <div class="content">
+                <h2>Maldives</h2>
+                <p class="lines">From its crystal-clear waters and stunning sunsets to its amazing marine life,the Maldives is a perfect destination.</p>
+                <p class="costp">$160</p>
+                <input type="submit" class="btnn" value="Book">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- services section -->
+<section class="services" id="services">
+    <h1>Services:</h1><br><br>
+    <div class="container">
+        <div class="ncard">
+            <div class="ncardimg" id="card11"></div>
+            <div class="content">
+                <h2>Fastest Travel</h2>
+            </div>
+        </div>
+        <div class="ncard">
+            <div class="ncardimg" id="card12"></div>
+            <div class="content">
+                <h2>Around the World</h2>
+            </div>
+        </div>
+        <div class="ncard">
+            <div class="ncardimg" id="card13"></div>
+            <div class="content">
+                <h2>Affordable Hotels</h2>
+            </div>
+        </div>
+        <div class="ncard">
+            <div class="ncardimg" id="card14"></div>
+            <div class="content">
+                <h2>Safety Guide</h2>
+            </div>
+        </div>
+        <div class="ncard">
+            <div class="ncardimg" id="card15"></div>
+            <div class="content">
+                <h2>Food and Drinks</h2>
+            </div>
+        </div>
+        <div class="ncard">
+            <div class="ncardimg" id="card16"></div>
+            <div class="content">
+                <h2>Adventure</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+     <h1>Gallery:</h1><br><br>
+    
+     <div class="container">
+        <div class="gcard">
+            <div class="gcardimg" id="card21"></div>
+            <div class="gcontent">
+                <h2>Jaipur</h2>
+            </div>
+        </div>
+        <div class="gcard">
+            <div class="gcardimg" id="card22"></div>
+            <div class="gcontent">
+                <h2>Sydney</h2>
+            </div>
+        </div>
+        <div class="gcard">
+            <div class="gcardimg" id="card23"></div>
+            <div class="gcontent">
+                <h2>Amritsar</h2>
+            </div>
+        </div>
+        <div class="gcard">
+            <div class="gcardimg" id="card24"></div>
+            <div class="gcontent">
+                <h2>New York</h2>
+            </div>
+        </div>
+        <div class="gcard">
+            <div class="gcardimg" id="card25"></div>
+            <div class="gcontent">
+                <h2>Tamil Nadu</h2>
+            </div>
+        </div>
+        <div class="gcard">
+            <div class="gcardimg" id="card26"></div>
+            <div class="gcontent">
+                <h2>Gujarat</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact section -->
+<section class="contact" id="contact" >
+    <h1>Contact Us:</h1><br>
+   <div class="ccontent">
+    <div class="clogo"></div>
+    <form action="" class="cform" id="contactF" >
+            <input type="text" id="name"  class="cbox" placeholder="Enter your name"><br>
+            <input type="email" id="emailid"  class="cbox" placeholder="Enter your email address"><br>
+            <input type="text" id="subject" class="cbox" placeholder="Enter the subject"><br>
+            <input type="text" id="msgContent" class="cbox" placeholder="Enter the message"><br>
+            <button type="submit" class="btnn">Send Message<br>
+    </form>
+   </div>
+</section>
+<!-- about section -->
+<section class="about" id="about">
+    <h1>About Us:</h1><br><br>
+    <p class="pabout">Travelling helps us to learn the heritage and culture of places around the globe.Trip Master is one such web application committed to provide amazing opportunities of tours and travel to people explore the world.Many wants to travel and explore the peaceful hills,valleys and beautiful lakes but a few make it.The reason behind this being the financial constraints.We understand these sentiments-so we at Trip Master help our clients to choose the packages according to their affordability and we ensure that they get the best services.We suggest them the best hotels, the best food, the best places with the best packages. </p>
+    <p class="pquote">पर्यटन् पृथिवीं सर्वां, गुणान्वेषणतत्परः।</p><br><br>
+</section>
+<footer id="hfoot">
+    Made by Prerna Singh
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
